@@ -1,0 +1,42 @@
+site_name: Mohammad Khanjani #[cite: 1]
+site_description: Water Resources Engineer | Data Scientist | Machine Learning Enthusiast #[cite: 1]
+site_url: https://m-khanjani.github.io/ #[cite: 1]
+
+theme: #[cite: 1]
+  name: material #[cite: 1]
+  
+  # تنظیمات رنگ (تم مینیمال مشکی با دکمه تغییر حالت روز و شب)
+  palette: #[cite: 1]
+    - media: "(prefers-color-scheme: light)" #[cite: 1]
+      scheme: default #[cite: 1]
+      primary: black #[cite: 1]
+      accent: indigo #[cite: 1]
+      toggle: #[cite: 1]
+        icon: material/weather-night #[cite: 1]
+        name: Switch to dark mode #[cite: 1]
+    - media: "(prefers-color-scheme: dark)" #[cite: 1]
+      scheme: slate #[cite: 1]
+      primary: black #[cite: 1]
+      accent: blue #[cite: 1]
+      toggle: #[cite: 1]
+        icon: material/weather-sunny #[cite: 1]
+        name: Switch to light mode #[cite: 1]
+
+  # تنظیمات فونت
+  font: #[cite: 1]
+    text: Roboto #[cite: 1]
+    code: Roboto Mono #[cite: 1]
+
+  # اضافه کردن دکمه بازگشت به بالا و افکت‌های زیبا
+  features: #[cite: 1]
+    - navigation.top #[cite: 1]
+    - navigation.tabs # Adds a professional top-level tab bar
+    - search.suggest #[cite: 1]
+    - search.highlight #[cite: 1]
+
+# منوی بالای سایت
+nav: #[cite: 1]
+  - Home: index.md #[cite: 1]
+  - Curriculum Vitae: cv.md #[cite: 1]
+  - Publications: publications.md #[cite: 1]
+  - Academic Projects: projects.md #[cite: 1]
