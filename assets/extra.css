@@ -232,8 +232,47 @@
 }
 
 /* CV timeline entries */
+.cv-timeline {
+  position: relative;
+  margin: 1.2rem 0 2rem;
+  padding-left: 1.6rem;
+}
+
+.cv-timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: var(--academic-border);
+}
+
 .cv-entry {
-  margin-bottom: 1.1rem;
+  position: relative;
+  margin-bottom: 1.4rem;
+  padding-left: 0.2rem;
+}
+
+.cv-entry::before {
+  content: "";
+  position: absolute;
+  left: -1.6rem;
+  top: 0.3rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--academic-accent-light);
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px var(--academic-accent-light);
+}
+
+[data-md-color-scheme="slate"] .cv-entry::before {
+  border-color: #14181f;
+}
+
+.cv-entry:last-child {
+  margin-bottom: 0;
 }
 
 .cv-entry .role {
@@ -247,6 +286,8 @@
   font-size: 0.92rem;
 }
 
+[data-md-color-scheme="slate"] .cv-entry .role { color: #eceef1; }
+
 .md-typeset .md-button {
   border-radius: 999px;
 }
@@ -259,4 +300,127 @@
 .md-typeset .md-button--primary:hover {
   background-color: var(--academic-accent-light);
   border-color: var(--academic-accent-light);
+}
+
+/* Status / availability banner on the homepage */
+.status-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1rem;
+  margin: 1.4rem 0 0.4rem;
+  border: 1px solid #cfe3d6;
+  border-radius: 8px;
+  background: #f1f9f4;
+  font-size: 0.9rem;
+  color: #1e5c33;
+}
+
+[data-md-color-scheme="slate"] .status-banner {
+  background: #12271a;
+  border-color: #234d31;
+  color: #7fd99a;
+}
+
+.status-banner .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2e9e52;
+  flex: none;
+  box-shadow: 0 0 0 3px rgba(46, 158, 82, 0.18);
+}
+
+/* Skill pills */
+.skill-group {
+  margin-bottom: 1.1rem;
+}
+
+.skill-group .skill-cat {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #66707c;
+  margin-bottom: 0.5rem;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--academic-border);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: #33393f;
+  background: #fafbfc;
+}
+
+[data-md-color-scheme="slate"] .pill {
+  background: #1c222b;
+  border-color: #2a313c;
+  color: #cfd4da;
+}
+
+/* Tool tags on project cards */
+.tool-tags {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tool-tags .tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 5px;
+  background: #eef2f7;
+  color: var(--academic-accent);
+}
+
+[data-md-color-scheme="slate"] .tool-tags .tag {
+  background: #1c2a3a;
+  color: #8fb3d9;
+}
+
+.project-role {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #a86400;
+  background: #fff4de;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+[data-md-color-scheme="slate"] .project-role {
+  background: #3a2c0e;
+  color: #f0b95e;
+}
+
+/* Research statement callout */
+.callout {
+  border-left: 3px solid var(--academic-accent-light);
+  background: #f7f9fb;
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.4rem 0;
+}
+
+[data-md-color-scheme="slate"] .callout {
+  background: #1a1f27;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
 }
