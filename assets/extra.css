@@ -88,6 +88,7 @@
   hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
+
 }
 
 .md-typeset a {
@@ -434,4 +435,12 @@
 
 .callout p:last-child {
   margin-bottom: 0;
+}
+
+
+
+
+.contact-row p,
+.links-row p {
+  text-align: left;
 }
