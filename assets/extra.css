@@ -81,6 +81,12 @@
   color: #14181f;
 }
 
+.md-typeset p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
 .md-typeset a {
   text-decoration: none;
 }
