@@ -81,10 +81,13 @@
   color: #14181f;
 }
 
-.md-typeset p {
+.md-typeset p,
+.md-typeset li {
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .md-typeset a {
